@@ -16,6 +16,9 @@
 		9C3827F9203EE61600AEC543 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3827F8203EE61600AEC543 /* SampleData.swift */; };
 		9C3827FB203EE6F400AEC543 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3827FA203EE6F400AEC543 /* PlayersViewController.swift */; };
 		9C3827FF203EEA6800AEC543 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3827FE203EEA6800AEC543 /* PlayerCell.swift */; };
+		9C8B69772049D6B600F7CC5B /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B69762049D6B600F7CC5B /* PlayerDetailsViewController.swift */; };
+		9C8B69792049EDC300F7CC5B /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B69782049EDC300F7CC5B /* GamePickerViewController.swift */; };
+		9C8B697C2049F26B00F7CC5B /* Players.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8B697A2049F26B00F7CC5B /* Players.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		9C3827F8203EE61600AEC543 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		9C3827FA203EE6F400AEC543 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		9C3827FE203EEA6800AEC543 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerCell.swift; path = ../PlayerCell.swift; sourceTree = "<group>"; };
+		9C8B69762049D6B600F7CC5B /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		9C8B69782049EDC300F7CC5B /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
+		9C8B697B2049F26B00F7CC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ratings/Base.lproj/Players.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 		9C3827D6203ED6CB00AEC543 = {
 			isa = PBXGroup;
 			children = (
+				9C8B697A2049F26B00F7CC5B /* Players.storyboard */,
 				9C3827E1203ED6CB00AEC543 /* Ratings */,
 				9C3827E0203ED6CB00AEC543 /* Products */,
 			);
@@ -72,6 +79,8 @@
 				9C3827EB203ED6CC00AEC543 /* LaunchScreen.storyboard */,
 				9C3827EE203ED6CC00AEC543 /* Info.plist */,
 				9C3827FA203EE6F400AEC543 /* PlayersViewController.swift */,
+				9C8B69762049D6B600F7CC5B /* PlayerDetailsViewController.swift */,
+				9C8B69782049EDC300F7CC5B /* GamePickerViewController.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -136,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3827ED203ED6CC00AEC543 /* LaunchScreen.storyboard in Resources */,
+				9C8B697C2049F26B00F7CC5B /* Players.storyboard in Resources */,
 				9C3827EA203ED6CC00AEC543 /* Assets.xcassets in Resources */,
 				9C3827E8203ED6CC00AEC543 /* Main.storyboard in Resources */,
 			);
@@ -148,9 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8B69792049EDC300F7CC5B /* GamePickerViewController.swift in Sources */,
 				9C3827FF203EEA6800AEC543 /* PlayerCell.swift in Sources */,
 				9C3827F7203EE5E600AEC543 /* Player.swift in Sources */,
 				9C3827E5203ED6CC00AEC543 /* ViewController.swift in Sources */,
+				9C8B69772049D6B600F7CC5B /* PlayerDetailsViewController.swift in Sources */,
 				9C3827E3203ED6CB00AEC543 /* AppDelegate.swift in Sources */,
 				9C3827FB203EE6F400AEC543 /* PlayersViewController.swift in Sources */,
 				9C3827F9203EE61600AEC543 /* SampleData.swift in Sources */,
@@ -174,6 +186,14 @@
 				9C3827EC203ED6CC00AEC543 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9C8B697A2049F26B00F7CC5B /* Players.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8B697B2049F26B00F7CC5B /* Base */,
+			);
+			name = Players.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

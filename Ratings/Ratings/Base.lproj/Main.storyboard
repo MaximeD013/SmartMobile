@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="noe-wu-oqy" kind="relationship" relationship="viewControllers" id="tc5-QI-Uso"/>
+                        <segue destination="RYw-op-dbK" kind="relationship" relationship="viewControllers" id="tc5-QI-Uso"/>
                         <segue destination="Jjm-7e-brO" kind="relationship" relationship="viewControllers" id="DVJ-ha-3n1"/>
                     </connections>
                 </tabBarController>
@@ -54,101 +54,17 @@
             <point key="canvasLocation" x="-526" y="-50"/>
         </scene>
         <!--Players-->
-        <scene sceneID="xmm-EX-92q">
+        <scene sceneID="LPd-IR-0Zo">
             <objects>
-                <tableViewController id="tP3-nr-NoX" customClass="PlayersViewController" customModule="Ratings" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="muJ-rW-f7O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="jlh-7q-YE7" customClass="PlayerCell" customModule="Ratings" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jlh-7q-YE7" id="X96-LF-4Dk">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QNl-Ad-NOd">
-                                            <rect key="frame" x="20" y="0.0" width="301" height="60"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Ke-Gr-DaT">
-                                                    <rect key="frame" x="0.0" y="12" width="45" height="36.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay2-9G-r2u">
-                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkv-9l-VnI">
-                                                            <rect key="frame" x="0.0" y="20.5" width="45" height="16"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWm-17-tmt">
-                                                    <rect key="frame" x="220" y="5" width="81" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="81" id="3ze-xq-lwq"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="aWm-17-tmt" firstAttribute="top" secondItem="QNl-Ad-NOd" secondAttribute="top" constant="5" id="sSV-b3-GRh"/>
-                                            </constraints>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="QNl-Ad-NOd" secondAttribute="trailing" constant="20" id="5l3-U3-2ok"/>
-                                        <constraint firstAttribute="bottom" secondItem="QNl-Ad-NOd" secondAttribute="bottom" id="CxA-k1-B5f"/>
-                                        <constraint firstItem="QNl-Ad-NOd" firstAttribute="leading" secondItem="X96-LF-4Dk" secondAttribute="leading" constant="20" id="UDz-Gw-bRP"/>
-                                        <constraint firstItem="QNl-Ad-NOd" firstAttribute="top" secondItem="X96-LF-4Dk" secondAttribute="top" id="dKS-Na-BRk"/>
-                                        <constraint firstAttribute="bottom" secondItem="QNl-Ad-NOd" secondAttribute="bottom" id="t8g-PZ-w3I"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="gameLabel" destination="gkv-9l-VnI" id="tPr-oX-onX"/>
-                                    <outlet property="nameLabel" destination="Ay2-9G-r2u" id="Pje-8N-vNB"/>
-                                    <outlet property="ratingImageView" destination="aWm-17-tmt" id="74N-oR-vKl"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="tP3-nr-NoX" id="2ZN-tN-9o4"/>
-                            <outlet property="delegate" destination="tP3-nr-NoX" id="dzP-Vg-tdT"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="jC8-9q-7OC"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I1M-Er-DCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1216.8" y="-458.32083958020991"/>
-        </scene>
-        <!--Players-->
-        <scene sceneID="i9J-Ch-UDx">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="noe-wu-oqy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Players" image="Players" id="A1c-zC-JKG"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUk-K4-a5o">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tP3-nr-NoX" kind="relationship" relationship="rootViewController" id="p9T-a5-xsP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qDs-aW-XBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Players" id="RYw-op-dbK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sqz-th-aUv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ecr-yz-3hJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="425" y="-458"/>
         </scene>
     </scenes>
     <resources>
         <image name="Gestures" width="30" height="30"/>
-        <image name="Players" width="30" height="30"/>
     </resources>
 </document>
