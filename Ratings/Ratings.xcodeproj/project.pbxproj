@@ -313,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J8K3YJZU5;
 				INFOPLIST_FILE = Ratings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Ratings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J8K3YJZU5;
 				INFOPLIST_FILE = Ratings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Ratings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
